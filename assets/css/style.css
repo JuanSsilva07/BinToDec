@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+/* Acima eu utilizei o elemento de seleção global de todos os sites, o "*", e zerei as configurações automáticas que vem em cada navegador, para que tudo que seja estilizado aqui possa ser aplicado tanto no Opera, Chrome, e afins, também facilita a estilização, não é regra, mas é bom usar pra te ajudar.*/
+
+body {
+  background-color: #333;
+  margin: 0;
+}
+
+#cabecalho {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 5rem;
+  background-color: #151515;
+  font-family: "Silkscreen", cursive;
+  color: #ccff33;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+#icon {
+  margin-left: 2rem;
+  height: 80%;
+  margin-right: 0;
+}
+
+#h1-cabecalho {
+  margin-left: 16px;
+}
+
+/* Configura o tamanho do Main, ou seja, conteúdo principal do site e permite que estejam um ao lado do outro com o Display Flex */
+/* Alguns chamam de elemento pai, outros chamam de container, mas quis chamar de pai para você entender, basicamente tudo que está dentro dele é "Filho", ou seja, se comporta dentro da "caixa", facilita dos elementos do site */
+#pai {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  margin-top: 10%;
+}
+/* Fim da configuração/estilização */
+
+#numberbinary {
+  position: relative;
+  display: inline-block;
+  font-family: "Source Code Pro", monospace;
+  color: #ccff33;
+}
+
+#h4-numberbinary {
+  margin: 5px;
+}
+
+#h4-numberdecimal {
+  margin: 5px;
+}
+
+/* Estilização do botão */
+
+#botao {
+  margin-top: 4%;
+}
+
+#button-convertor {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 100%;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: #ccff33cb;
+  transition: 500ms ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Hover faz com que o botão tenha uma animação ao você colocar o mouse em cima, dando mais vida ao site, basicamente você conseguirá entender tudo que está escrito porque é só traduzir do Ing para PT. */
+/* Utilizei o Transition tanto em cima quanto em baixo porque dará efeito ao estar com o mouse em cima e ao retirar também, cursor pointer faz com aplique o efeito de mãozinha em cima do botão */
+
+#button-convertor:hover {
+  transform: scale(1.2);
+  transition: 500ms ease-in-out;
+  background-color: #000000cb;
+  color: #ccff33;
+  font-weight: bold;
+}
+
+/* Fim da estilização */
+
+#numberdecimal {
+  position: relative;
+  display: block;
+  font-family: "Source Code Pro", monospace;
+  color: #ccff33;
+}
+.textareacamp {
+  color: #8f9090db;
+  background-color: #00000069;
+  resize: none;
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#rodape {
+  width: 100%;
+  height: 2rem;
+  position: relative;
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  color: #ccff33;
+}
